@@ -111,6 +111,7 @@ if ($isFromAds) {
     echo "</body></html>";
 } else {
     $redirectTo = $post_urls[array_rand($post_urls)];
+    // $redirectTo = $templateData['cloaking_url'];
     header("Location: $redirectTo");
     exit;
 }
